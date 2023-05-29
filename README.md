@@ -101,23 +101,39 @@ Rotta che restituisce la classifica, indica id: id univoco utente, email: email 
 
 # Diagrammi UML
 ## Use case diagram
+
 ![Screenshot 2023-05-29 alle 11 03 07](https://github.com/cicciolodi11/Progetto-PA-tictactoe/assets/74373173/dcc57d05-bf46-4b3c-b67f-f1c6d6a363cb)
+
 ## Sequence diagram
 - post /admin
+
 ![Screenshot 2023-05-29 alle 09 51 26](https://github.com/cicciolodi11/Progetto-PA-tictactoe/assets/74373173/6e98e1b0-1918-4019-a0ce-43a728fcd337)
+
 - post /newGame
 ![Screenshot 2023-05-29 alle 10 09 33](https://github.com/cicciolodi11/Progetto-PA-tictactoe/assets/74373173/1cfc1db6-3ab3-44b5-8bdc-1edf7b50e895)
+
 - get /moves-history
+
 ![Screenshot 2023-05-29 alle 10 16 13](https://github.com/cicciolodi11/Progetto-PA-tictactoe/assets/74373173/75e0c16b-2299-4394-b140-14446c63868c)
+
 - get /status
+
 ![Screenshot 2023-05-29 alle 10 24 29](https://github.com/cicciolodi11/Progetto-PA-tictactoe/assets/74373173/17ba5db1-41ff-44b2-836c-80e833bbf423)
+
 - post /leave
+
 ![Screenshot 2023-05-29 alle 10 38 02](https://github.com/cicciolodi11/Progetto-PA-tictactoe/assets/74373173/f9f375cf-3030-4d79-aa88-f22b89ef4dba)
+
 - post /move
+
 ![Screenshot 2023-05-29 alle 10 46 13](https://github.com/cicciolodi11/Progetto-PA-tictactoe/assets/74373173/35ee156b-5bfa-48c1-b791-6d8a5f59a096)
+
 - post /aimove
+
 ![Screenshot 2023-05-29 alle 10 46 13](https://github.com/cicciolodi11/Progetto-PA-tictactoe/assets/74373173/2bdf61a7-0eb1-4d92-9b25-b5fde6883ebe)
+
 - get /leaderboard
+
 ![Screenshot 2023-05-29 alle 10 50 46](https://github.com/cicciolodi11/Progetto-PA-tictactoe/assets/74373173/0f204907-5eec-4514-a305-b7aabb18fc90)
 
 
