@@ -1,0 +1,20 @@
+version: '3.7'
+services:
+  dbpg:
+    image: postgres:latest
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:  
+      - ./seed/seed.sql:/docker-entrypoint-initdb.d/seed.sql
+  nodeapp:
+        build: .
+        restart: always
+        ports:
+          - 8080:8080
+        env_file:
+          - .env
+        depends_on:
+          - dbpg
