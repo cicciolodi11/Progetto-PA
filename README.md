@@ -132,7 +132,7 @@ Rotta che restituisce la classifica, indica id: id univoco utente, email: email 
 
 ![Screenshot 2023-05-29 alle 10 46 13](https://github.com/cicciolodi11/Progetto-PA-tictactoe/assets/74373173/2bdf61a7-0eb1-4d92-9b25-b5fde6883ebe)
 
-- get /leaderboard /n
+- get /leaderboard
 
 ![Screenshot 2023-05-29 alle 10 50 46](https://github.com/cicciolodi11/Progetto-PA-tictactoe/assets/74373173/0f204907-5eec-4514-a305-b7aabb18fc90)
 
