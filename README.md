@@ -152,16 +152,20 @@ Nel codice viene fatto largo uso di middleware che verifica la validità del tok
 
 - Ambiente Docker installato sulla propria macchina
 - Creare un file chiamato ".env" con questa struttura: (sostituire 'secret' con la chiave con la quale verranno generati i token JWT)
-
-`PGDATABASE=tictactoe
+`
+PGDATABASE=tictactoe
 PGUSER=fabiosilveri
 PGPASSWORD=ciao
 PGHOST=localhost
 PGPORT=5432
+SECRET_KEY=chiavesegreta
+`
 
-SECRET_KEY=chiavesegreta`
 ## Procedura di avvio:
 Posizionarsi nella cartella clonata dal seguente repository
 Avviare il servizio Docker tramite il comando:
 `$ docker-compose up`
 Eseguire le richieste sulla porta 8080 tramite cURL o Postman
+
+
+Fabio Silveri
