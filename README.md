@@ -136,4 +136,32 @@ Rotta che restituisce la classifica, indica id: id univoco utente, email: email 
 
 ![Screenshot 2023-05-29 alle 10 50 46](https://github.com/cicciolodi11/Progetto-PA-tictactoe/assets/74373173/0f204907-5eec-4514-a305-b7aabb18fc90)
 
+# Design pattern
 
+## MVC (Model-View-Controller)
+Il codice è organizzato secondo il pattern MVC, dove controller.ts rappresenta il controller. Il controller gestisce le richieste ricevute dal client, interagisce con il modello per accedere ai dati e aggiornare lo stato dell'applicazione, e restituisce una risposta al client tramite la vista.
+
+## Singleton pattern
+Il file sequelize.ts implementa un singleton per la connessione al database utilizzando Sequelize. Il pattern singleton viene utilizzato per garantire che venga creata una sola istanza di SingletonDB e fornire un punto di accesso globale a tale istanza. 
+
+## Middleware 
+Nel codice viene fatto largo uso di middleware che verifica la validità del token associato alla richiesta e la coerenza dei dati inseriti.
+
+# Avvio del progetto
+## Prerequisiti:
+
+- Ambiente Docker installato sulla propria macchina
+- Creare un file chiamato ".env" con questa struttura: (sostituire 'secret' con la chiave con la quale verranno generati i token JWT)
+
+`PGDATABASE=tictactoe
+PGUSER=fabiosilveri
+PGPASSWORD=ciao
+PGHOST=localhost
+PGPORT=5432
+
+SECRET_KEY=chiavesegreta`
+## Procedura di avvio:
+Posizionarsi nella cartella clonata dal seguente repository
+Avviare il servizio Docker tramite il comando:
+`$ docker-compose up`
+Eseguire le richieste sulla porta 8080 tramite cURL o Postman
