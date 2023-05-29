@@ -1,0 +1,228 @@
+{
+	"info": {
+		"_postman_id": "773fbe45-acaa-4ef9-93b7-c79781aaf376",
+		"name": "tic tac toe",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19910082"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/leaderboard?order=ASC",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkZXN0IjoidXNlcjNAZXhhbXBsZS5jb20iLCJnYW1lVHlwZSI6InB2ZSJ9.JBC2G8MtDtqkE7pUZhdpMxTr1JtZF6q0vtergNg9FNk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/leaderboard?order=ASC",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"leaderboard"
+					],
+					"query": [
+						{
+							"key": "order",
+							"value": "ASC"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "newGame",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkZXN0IjoidXNlcjNAZXhhbXBsZS5jb20iLCJnYW1lVHlwZSI6InB2ZSJ9.JBC2G8MtDtqkE7pUZhdpMxTr1JtZF6q0vtergNg9FNk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/newGame",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"newGame"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "move",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkZXN0IjoidXNlcjNAZXhhbXBsZS5jb20iLCJnYW1laWQiOiI3NTgyIiwicm93IjowLCJjb2x1bW4iOjB9.uS2wZ1GW8u7lHdT991i0onBub-Yx3Hp1OcvJV82Dxog",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/move",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"move"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "aimove",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkZXN0IjoiQUkiLCJnYW1laWQiOiI3NTgyIn0.BShV88AXeM04sioCyP-AbKr2bAAa5uk6fCsyE16-Fsc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/aimove",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"aimove"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "moves-history",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkZXN0IjoidXNlcjNAZXhhbXBsZS5jb20iLCJvcmRlciI6ImFzYyJ9.e5SQTc6T6M6Bz4-Cp5wbFMoTKR3evxRLyBqXnnnC9uc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/moves-history",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"moves-history"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "status",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJnYW1laWQiOiI3NTgyIiwiZGVzdCI6InVzZXIzQGV4YW1wbGUuY29tIn0.V62iJextbScUP5vQBOSDwN9OIEgV4LW20Q0eGWEgvXQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/status",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "leave",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJnYW1laWQiOiI3NTgyIiwiZGVzdCI6InVzZXIzQGV4YW1wbGUuY29tIn0.V62iJextbScUP5vQBOSDwN9OIEgV4LW20Q0eGWEgvXQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/leave",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"leave"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJkZXN0IjoidXNlcjFAZXhhbXBsZS5jb20iLCJ0b2tlbiI6NywiY0FkbWluIjoidXNlcjRAZXhhbXBsZS5jb20iLCJjQXJvbGUiOiJhZG1pbiJ9.SUnxGB5-vvjNVl7-HASyYNqsa502qgj7kWCK0oeo6ks",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/admin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
